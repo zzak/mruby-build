@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    mruby-build (0.0.0)
+      rake
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.4.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mruby-build!
+
+BUNDLED WITH
+   1.11.2
