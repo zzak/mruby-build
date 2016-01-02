@@ -29,3 +29,7 @@ Tool for building MRuby.
 
 * gem install
 * rake
+
+## License
+
+mruby-build is released under the [MIT License](http://www.opensource.org/licenses/MIT).
