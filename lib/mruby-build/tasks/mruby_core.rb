@@ -3,11 +3,6 @@ module MRuby
     class MRubyCore < Rake::TaskLib
       def initialize
         MRuby.each_target do
-#p t.build_dir
-          #current_dir = File.dirname(__FILE__).relative_path_from(Dir.pwd)
-          #relative_from_root = File.dirname(__FILE__).relative_path_from(MRUBY_ROOT)
-          #current_build_dir = "#{build_dir}/#{relative_from_root}"
-
           objs = Dir.glob("#{MRUBY_ROOT}/src/*.c").map { |f|
             next nil if cxx_abi_enabled? and f =~ /(error|vm).c$/
 

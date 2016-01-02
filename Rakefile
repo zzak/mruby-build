@@ -26,7 +26,7 @@ task :all => :binfiles do
 end
 
 desc "run all mruby tests"
-task :test => ["all"] do
+task :test => :all do
   MRuby.each_target do
     run_test if test_enabled?
   end
