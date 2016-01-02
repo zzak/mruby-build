@@ -144,7 +144,7 @@ EOS
 
     def build_mrbtest
       #gem :core => 'mruby-test'
-      gem :path => '/home/zzak/code/mruby-bin-test'
+      gem :github => 'zzak/mruby-bin-test'
     end
 
     def build_mrbc_exec
