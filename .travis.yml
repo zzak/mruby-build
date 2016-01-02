@@ -13,4 +13,5 @@ before_install:
   - gem install bundler
 before_script:
   - bundle install
+  - git clone https://github.com/mruby/mruby
 script: "bundle exec rake test"
