@@ -20,5 +20,4 @@ module MRuby
       end
     end
   end
-  Toolchain.load
 end
