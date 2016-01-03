@@ -7,10 +7,6 @@ require 'mruby-build'
 MRUBY_CONFIG = (ENV['MRUBY_CONFIG'] && ENV['MRUBY_CONFIG'] != '') ? ENV['MRUBY_CONFIG'] : "#{MRUBY_ROOT}/build_config.rb"
 load MRUBY_CONFIG
 
-MRuby.each_target do |build|
-  build.define_rules
-end
-
 MRuby::Rules.define
 
 task :default => :all

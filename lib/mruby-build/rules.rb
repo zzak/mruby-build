@@ -9,6 +9,10 @@ require 'mruby-build/tasks/binfiles'
 module MRuby
   module Rules
     def self.define
+      MRuby.each_target do |build|
+        build.define_rules
+      end
+
       MRuby::Tasks::MRubyCore.new
       MRuby::Tasks::Mrblib.new
       MRuby::Tasks::Mrbgems.new
