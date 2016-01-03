@@ -1,4 +1,4 @@
-# MRuby::Build
+# MRuby::Build [![Build Status](https://travis-ci.org/zzak/mruby-build.svg?branch=master)](https://travis-ci.org/zzak/mruby-build)
 
 Tool for building MRuby.
 
