@@ -3,6 +3,7 @@ require 'mruby-build/tasks/mruby_core'
 require 'mruby-build/tasks/mrblib'
 require 'mruby-build/tasks/mrbgems'
 require 'mruby-build/tasks/libmruby'
+require 'mruby-build/tasks/mrbtest'
 require 'mruby-build/tasks/benchmark'
 require 'mruby-build/tasks/binfiles'
 
@@ -21,6 +22,7 @@ module MRuby
       MRuby::Tasks::Mrblib.new
       MRuby::Tasks::Mrbgems.new
       MRuby::Tasks::Libmruby.new
+      MRuby::Tasks::Mrbtest.new
       MRuby::Tasks::Benchmark.new
       MRuby::Tasks::Binfiles.new
     end
