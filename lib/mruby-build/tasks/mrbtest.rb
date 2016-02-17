@@ -162,7 +162,7 @@ module MRuby
               end
 
               unless build_mrbtest_lib_only?
-                file exec => [driver, mlib, mrbtest_lib, libmrb, libmrb_core] do |t|
+                file exec => [driver, mrbtest_lib, mlib, libmrb_core, libmrb] do |t|
                   gem_flags = gems.map { |g| g.linker.flags }
                   gem_flags_before_libraries = gems.map { |g| g.linker.flags_before_libraries }
                   gem_flags_after_libraries = gems.map { |g| g.linker.flags_after_libraries }
